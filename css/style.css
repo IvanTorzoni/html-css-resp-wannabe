@@ -128,9 +128,75 @@ img {
     SOLUZIONE RESPONSIVE
  ************************************************/
 
+
+/* Media Query for tablet devices */
  @media screen and (max-width: 768px) {
+    /* container adaptive configuration */
     .container {
         width: 100%;
         margin: 0 auto;
     }
+}
+
+/* Media Query for smartphone devices */
+@media screen and (max-width: 480px) {
+    /* Rows adaptive configuration */
+    .row {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    /* titles and texts configuration */
+    h1 {
+        font-size: 3rem;
+    }
+
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        margin-bottom: 2vh;
+    }
+    /* /titles and texts configuration */
+
+    /* Lessons section configuration */
+    .lessons .col {
+        width: 100%;
+    }
+
+    .lessons .col img {
+        height: 100%;
+    }
+    /* /Lessons section configuration */
+
+    /* Steps section configuration */
+    .steps .col {
+        width: 100%;
+    }
+
+    .steps .col img {
+        height: 100%;
+    }
+    /* /Steps section configuration */
+
+
+    /* Why us section configuration */
+    .why-us .col-left {
+        width: 100%;
+        padding-bottom: 2vh;
+    }
+
+    .why-us .col-right {
+        width: 100%;
+    }
+
+    /* Why us section configuration */
+
 }
